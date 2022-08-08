@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fogel Nutricion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Aca empieza todo lo que se ve dentro de la pagina -->
+
+<body>
+  <!-- Inicio del NAV -->
+
+  <header> 
+
+    <input type="checkbox" id="btn-menu">
+    <label  for="btn-menu"><img class="menuHamburguesa" src="imagen/menu_icon.png" width="50px" alt=""></label>
+    
+    
+     
+    
+    <nav class="menu">
+      <!--<img class="logo" src="./imagen/pamela logo-01.jpg" alt=""-->
+      <h1 class="logo">Fogel Nutricion</h1>
+      
+      
+     
+       <ul class="nav__list">
+        
+         <li><a  href="index.html">Inicio</a></li>
+         <li><a  href="./page/sobremi.html">Sobre mi</a></li>
+         <li><a  href="turnos.html">Turnos</a></li>
+         <li><a  href="./page/cotacto.html">Contactos</a></li>
+         <li><a  href="recetas.html">Recetas</a></li>
+       </ul>
+     
+    </nav>
+  </header> 
+  <!-- finaliza el NAV -->
+  
+
+ 
+<!-- Inicio de la Imagen -->
+
+<div class="carrousell">
+  <img class="imagen__nutri" src="imagen/nutricionista.jpg" alt="imagen de la nutricionista">
+  
+</div>
+    
+<!-- Finaliza de la Imagen  -->  
+
+
+<!-- Comienzo sobreMi -->
+
+<article class="article__aboutme">
+  <a class="article__sobremi" href="sobremi.html">Sobre fogel Nutricion</a>
+    <div class="contenedor">
+       <div class="contenedorP">
+         <p class="sobremi">
+          Soy Pamela Perez Fogel,Licenciada en Nutricion de la universida de Buenos Aires y ex residente
+          del Hospital fernandez (CABA)
+          y potenciar al maximo su potencial a traves de los alimentos. 
+          Dedico mi trabajo a lo que me apasiona: ayudar a las personas a tener mejor calidad de vida 
+          acorde a tus necesidades y deseos.
+          Para esto armamos juntos planes de alimentacion personalizados
+
+         </p>
+       </div>
+    </div>  
+
+
+   
+
+   
+
+    
+    
+    
+
+</article>
+<!-- finaliza SobreMi -->
+<div class="contenedorGrilla">
+   <div class="grillaImagen">
+      <img class="imagenGrilla" src="./imagen/alimentacion.plantas.jpeg" alt="">
+     <img class="imagenGrilla" src="./imagen/mediciones.jpeg"  alt="...">
+      <img class="imagenGrilla" src="./imagen/Correr.jpeg"  alt="...">
+   </div>
+</div>
+<div class="contendorTitulos">
+   <a class="titulosGrilla" href="./page/sobremi.html">Alimentacion basada en plantas</a>
+   <a class="titulosGrilla" href="./page/sobremi.html">Antropometria</a>
+   <a class="titulosGrilla" href="./page/sobremi.html">Nutricion deportiva </a>
+</div>
+
+
+  
+<hr class="linea-bajo-imagen">
+
+
+ 
+
+  
+
+  
+  
+  
+</div class="galeria">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./imagen/1.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./imagen/2.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./imagen/3.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img src="./imagen/4.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img src="./imagen/5.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img src="./imagen/6.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img src="./imagen/7.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img src="./imagen/8.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+  
+
+<hr class="linea-mas-abajo">
+
+   
+<!-- comienzo de formulario-->
+   
+<section>
+    
+  <form>
+   
+    <h2 class="texto-turnos">turnos/consultas</h2>
+
+      <div class="caja1"> 
+        
+        <p class="formulario">
+
+         <label class="formulario__texto">Nombre Apellido </label> 
+          <input class="formulario__input" type="text" size="70"  name="nombre apellido">
+   
+         <label class="formulario__texto">Email</label> 
+          <input class="formulario__input" type="text" name="Email">
+
+         <label class="formulario__texto">Tel(opcional)</label>
+           <input class="formulario__input" type="text" name="Tel">
+  
+         <label class="formulario__texto">Consultas</label> 
+          <textarea class="formulario__input" name="Consultas" id="" cols="30" rows="10"></textarea>
+
+         <input class="input__submit" type="submit" name="enviar" style="color: blue">
+
+        </p>
+      </div>
+   
+
+
+  </form>
+</section>
+<!-- finaliza  formulario -->
+
+<!-- comienzo del footer-->
+<footer class="informacion">
+  <section>
+    <h2 class="h2C">Contacto</h2>
+    <ul>
+      <div class="contactos-texto">
+         <li>Email. fogelnutricion@gmail.com</li>
+      
+         <li>Tel. 2284 50-5020</li>
+      
+         <li>inta-fogelnutricion</li>
+      </div>
+    </ul>
+  </section>
+</footer>
+<!-- finaliza footer -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+</body>
+</html>

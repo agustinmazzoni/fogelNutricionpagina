@@ -1,0 +1,546 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* estilos del index*/
+
+
+
+body{
+
+   
+    font-family: sans-serif;
+    background-image: url("/imagen/fondo-borde-floral-primavera-verde-ilustracion-acuarela-hoja_53876-126807.webp") ;
+    box-sizing: border-box;
+    
+    
+    
+    
+ }
+
+ /* COMIENZO DE MENU */
+ 
+ header{
+ 
+     width: 100%;
+     background: rgba(41, 68, 43, 0.557);
+     height: 150px;
+     
+
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 100;
+     
+ }
+ #btn-menu{
+ 
+     display: none;
+     margin: 0;
+     
+     
+ }
+ 
+ header label{
+ 
+     display: none;
+     width: 30px;
+     height: 30px;
+     padding: 20px;
+     border-right: 1px solid white;
+     
+ 
+ }
+ header label:hover{
+ 
+      cursor: pointer;
+      background: rgba(0, 0,0, 0.3);
+ }
+ 
+ .menu ul{
+ 
+     margin: 0;
+     list-style: none;
+     padding: 0;
+     display: flex;
+     justify-content: end;
+     margin-top: -4%;
+     
+ 
+ }
+ .menu li:hover{
+     background:rgba(0, 0,0, 0.3) ;
+     transition: 2s;
+     border-radius: 10px;
+ 
+ }
+ 
+ .menu li a{
+ 
+     display: block;
+     padding: 15px 20px;
+     color: #fff;
+     text-decoration: none;
+     
+ }
+ 
+ @media (max-width:768px)  {
+ 
+     header label{
+         display: flex;
+         justify-content: center;
+         
+         margin-top: 90px;
+         width: 60px;
+         height: 60px;
+
+     }
+     
+ 
+     .menu{
+         position: absolute;
+         background:rgba(41, 68, 43, 0.687) ;
+         width: 70%;
+         margin-left: -70%;
+         transition: all 1s;
+     }
+     
+ 
+     .menu ul{
+         flex-direction: column;
+     }
+     .menu li{
+        margin-top: 20px;
+        
+     }
+ 
+     #btn-menu:checked ~ .menu{ 
+         margin: 0;
+ 
+     }
+     /* finde de menu */
+
+     .caja1{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: 3s all;
+     }
+     .formulario{
+        padding-right: 30px;
+     }
+     .galeria{
+        transition:3s all;
+     }
+     .titulo__sobremi .h1{
+        display: flex;
+        justify-content: center;
+        padding-top: 20%;
+
+        
+    }
+    
+     
+     
+     
+     
+     
+    
+ 
+ 
+ /* Comienzo de la imagen*/
+ 
+ }
+ .carrousell{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px
+    
+ }
+
+
+.imagen__nutri{
+    justify-content: center;
+    width: 700px;
+    margin-top: 200px;
+    border-radius: 10px;
+    
+}
+/* Fin de la Imagen*/
+
+
+/* Comienzo sobre Mi */
+.article__sobremi {
+
+
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 10%;
+    color: black;
+    text-decoration: none;
+}
+
+.sobremi{
+    max-width: 780;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    
+
+}
+
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    
+    
+    width: 100%;
+    padding: 10px;
+}
+.contenedorP{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    line-height: 1.6;
+    font-weight: 700;
+    font-size: large;
+    
+}
+/*finaliza sobre mi*/
+.carta{
+    display: grid;
+    
+    
+    
+}
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+   
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-auto-rows: minmax(500px, auto);
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 3px 5px 5px rgba(3,32,51,.8) ;
+    
+    
+}
+.grid-item:hover{
+    filter: blur(2px);
+    transition: all .3s;
+    transform: scale(1.2);
+    
+
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+/*Comienza formulario*/
+.texto-turnos{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    padding-top: 10%;
+    
+    font-size: 40px;
+    align-items: center;
+    
+}
+.caja1{
+    
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+}
+.formulario{
+
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.formulario__texto{
+    font-size: 20px;
+}
+.input__submit{
+    width: 200px;
+
+
+    
+}
+
+/*finaliza formulario*/
+
+footer{
+
+    background-color: rgba(128, 128, 128, 0.613);
+    text-decoration: none;
+    width: 100%;
+    margin-top: 20%;
+    
+   
+    
+}
+.h2C{
+    font-size: 30px;
+    padding-left: 50px;
+    
+    
+}
+.contactos-texto{
+    font-size: 24px;
+    padding-left: 20px;
+    
+}
+.lista-imagen img{
+    width: 100%;
+    object-fit: cover;
+    width: 1200px;
+    height: 650px;
+    margin-right: 10px;
+    display: flex;
+    
+
+}
+.lista-imagen{
+    display: flex;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+.galeria{
+    padding: 32px;
+    
+    
+}
+.carousel-inner{
+    padding: 20px;
+   
+    
+   
+    
+}
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+
+/*estilos sobre mi*/
+.h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-size: 40px;
+}
+.cartas{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgba(41, 68, 43, 0.557) ;
+    width: 100%;
+   
+    
+}
+.cartas div{
+    display: flex;
+    justify-content: space-around;
+    
+    background-color: beige;
+    width: 600px;
+    height: 600px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    
+}
+.imagen1{
+    display: flex;
+    justify-content: center;
+    width: 570px;
+    margin: 10px;
+    border-radius: 10px;
+   
+    
+}
+
+
+
+
+
+
+/*estilos contacto*/
+#contacto__pagina{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 5%;
+}
+.contactos__pagina{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 10%;
+
+}
+
+
+/*estilos turnos*/
+/*estilos recetas*/
+.recetas{
+
+    text-align: center;
+    margin-top: 90px;
+}
+
+.recetas__igredientes{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+   
+}
+.budin{
+
+    text-align: center;
+    margin-top: 10%;
+}
+.logo{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 70px;
+    font-size: 50px;
+    
+}
+.nutricion{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+
+}
+.titulo__sobremi .h1{
+    
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 10%;
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    background-color: red;
+    width: 100%;
+    height: 500px;
+}
+.grillaImagen{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    
+   
+    
+}
+ .contendorTitulos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    justify-content: space-between;
+    width: 1500px;
+    margin-left: 8%;
+    font-size: larger;
+    
+    
+  
+    
+}
+.titulosGrilla{
+    
+    color: black;
+    
+    
+}
+
+
+.imagenGrilla{
+    width: 400px;
+    padding: 10%;
+    border-radius: 10px;
+}
+
+@media (max-width:768px){
+
+.imagenGrilla{
+   display: flex;
+   justify-content: center;
+   
+} 
+.cartas div{
+   display: flex;
+   justify-content: center;
+   margin: 0;
+    padding: 0;
+}
+.logo{
+    color: #fff;
+    margin-top: 10%;
+}
+.article__sobremi{
+    color: rgba(0, 0, 0, 0.509);
+    padding-left: 30%;
+} 
+
+}
+
+

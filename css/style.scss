@@ -2,22 +2,33 @@
 * {
     margin: 0;
     padding: 0;
+    
   }
   body {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
     background-image: url("/imagen/fondo-borde-floral-primavera-verde-ilustracion-acuarela-hoja_53876-126807.webp");
     box-sizing: border-box;
+    
   }
+  
+ 
+
+ 
   
   
   header {
     width: 100%;
     background: rgba(41, 68, 43, 0.557);
-    height: 150px;
+    height: 172px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
+    h1{
+        margin-top: 20px;
+    }
     label {
         display: none;
         width: 30px;
@@ -37,6 +48,11 @@
     display: none;
     margin: 0;
   }
+  .menuHamburguesa:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    width: 600px;
+  }
 
 .menu  {
     margin: 0;
@@ -54,7 +70,7 @@
             transition: 2s;
             border-radius: 10px;
              a {
-                display: block;
+                display: flex;
                 padding: 15px 20px;
                 color: #fff;
                 text-decoration: none;
@@ -68,19 +84,34 @@
   
   
 }
+.botones{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px ;
+    
+    
+}
+.logo{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 .logo1{
     display: flex;
     justify-content: left;
     margin-top: 50px;
     margin-left: 20px;
+    font-size: 50px;
+    
    
 }
   @media (max-width: 768px) {
     header label {
       display: flex;
       justify-content: center;
-      margin-top: 90px;
+      
       width: 60px;
       height: 60px;
     }
@@ -135,6 +166,11 @@
     font-size: 45px;
     
 }
+.contenedorCarousel{
+  margin: 10px;
+  
+}
+
   }
 /* finde de menu */
 
@@ -205,27 +241,23 @@
         border-radius: 10px;
       }
   }
+  @media (max-width: 768px){
+    .grillaImagen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      
+  }
+}
   
-  .contendorTitulos {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-between;
-    width: 1500px;
-    margin-left: 8%;
-    font-size: larger;
-    .titulosGrilla {
-        color: black;
-      }
-  }
+ 
   /*finaliza cartas*/
+.contenedorCarousel{
+  margin: 20px;
+  
+}
 
-  .galeria {
-    padding: 32px;
-    
-  }
-  .carousel-inner {
-    padding: 20px;
-  }
   
   
   /*Comienza formulario*/
@@ -236,12 +268,13 @@
     padding-top: 15%;
     font-size: 40px;
     align-items: center;
-    .caja1 {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        
-      }
+    
+  }
+  .caja1 {
+    display: flex;
+    justify-content: center;
+   
+    
   }
   
   .formulario {
@@ -249,40 +282,107 @@
     justify-content: center;
     flex-direction: column;
     width: 700px;
-    margin-left: 30%;
+    height: 400px;
     margin-top: 10%;
     
     
     .formulario__texto {
+      
         font-size: 20px;
+        background: rgba(41, 68, 43, 0.258);
+        height: 30px;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+
+        
+        
 
       }
   }
-  
-  .input__submit {
-    width: 200px;
+  .formulario__input{
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .formulario__input1{
+    border-radius: 10px;
   }
   
+  
+  
+  .btn1{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: larger;
+  }
+  
+  .btn1:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 255, 0.494);
+    color: white;
+  }
+  @media (max-width: 768px){
+    .texto-turnos{
+      padding-top: 40%;
+      
+    }
+  }
   /*finaliza formulario*/
 
   /*comienzo footer*/
 
   footer {
-    background-color: rgba(128, 128, 128, 0.613);
+    display: flex;
+    justify-content: center;
+    background-color: rgba(41, 68, 43, 0.557);
     text-decoration: none;
     width: 100%;
     margin-top: 20%;
+        
     .h2C {
         font-size: 30px;
-        padding-left: 50px;
+        padding: 30px 20px 30px 170px ;
+        color: #fff;
+        text-decoration: underline;
         
       }
   }
   
   .contactos-texto {
+    
     font-size: 24px;
     padding-left: 20px;
   }
+  .redes{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding: 10px 0px 10px 100px;
+    color: #fff;
+    
+    
+    
+    h2{
+      padding: 5px 0px 3px 10px;
+      font-size: 30px;
+      
+      
+    }
+  }
+  
+  @media (max-width: 768px){
+    .redes{
+      padding-right: 200px;
+    }
+    
+  }
+  
   /*finaliza footer*/
   
   
@@ -298,13 +398,16 @@
       margin: 0;
       padding: 0;
     }
-    .logo {
+    .logo1 {
       color: #fff;
       margin-top: 10%;
     }
     .article__sobremi {
       color: rgba(0, 0, 0, 0.509);
       padding-left: 30%;
+    }
+    .formulario{
+        width: 550px;
     }
 }
 
@@ -313,42 +416,233 @@
     display: flex;
     justify-content: center;
     font-size: 50px;
-    margin-top: 10%;
+    margin-top: 15%;
     color: black;
     text-decoration: none;
   }
 
   
-  .cartas {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(41, 68, 43, 0.557);
-    width: 100%;
-  }
   
-  .cartas  {
+  
+ 
+  .contenedorCard{
     display: flex;
-    justify-content: space-around;
-    background-color: beige;
-    div{
-        width: 600px;
-        height: 600px;
-        margin: 10px;
-        border-radius: 10px;
-        margin-left: 20px;
-        .imagen1 {
-            display: flex;
-            justify-content: center;
-            width: 570px;
-            margin: 10px;
-            border-radius: 10px;
+    justify-content: space-between;
+    background-color: rgba(250, 235, 215, 0.487);
+    margin-top: 50px;
+  }
+
+  .card{
+    position: relative;
+    width: 570px;
+    height: 650px;
+    margin: 20px;
+    .face{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      overflow: hidden;
+      transition: .5s;
+     
           }
-    }
-   
+        }
+      
+    
+    
+        .card .front{
+          transform: perspective(600px) rotateY(0deg);
+          box-shadow: 0 5px 10px black;
+          img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            
+          }
+        }
+
+        .card .front h3{
+          position: absolute;
+         bottom: 0;
+          width: 100%;
+          height: 120px;
+          line-height: 100px;
+          color: #fff;
+          background: rgba(0, 0, 0, 0.4);
+          text-align: center;
+        }
+        .card .back{
+          transform: perspective(600px) rotateY(180deg);
+          background: rgb(3, 35, 54);
+          padding: 15px;
+          color: #f3f3f3;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center;
+          box-shadow: 0 5px 10px #000;
+          h3{
+            font-size: 30px;
+            margin-top: 20px;
+            letter-spacing: 2px;
+            
+          }
+        }
+        .card .back p{
+          margin-bottom: 70%;
+        }
+        .card:hover .front{
+          transform: perspective(600px) rotateY(180deg);
+          transition: all 2s;
+         }
+         .card:hover .back{
+          transform: perspective(600px) rotateY(360deg);
+          transition: all 2s;
+         }
+
+         @media (max-width: 768px) {
+          .contenedorCard{
+            display: flex;
+            flex-direction: column;
+            
+          }
+          .card{
+            margin-right: 80%;
+          }
+          
+         }
+  /*estilos turnos*/
+  
+  
+  
+  
+  
+  
+  
+  
+  .texto-turnos2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15%;
+    font-size: 40px;
+    align-items: center;
+  }
+  .formulario2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    
+     margin-top: 10%;
+     label{
+        width: 800px;
+        padding: 7px;
+        
+        
+     }
+  }
+  .botonEnvio{
+    padding-left: 7px;
+  }
+  /*estilos contactos*/
+  .contenedorTodo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    
+  }
+.imagenContactos{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+  padding-bottom: 2px;
+  img{
+    
+    border-radius: 60px;
+    
+  }
+ 
+  
+}
+.tituloSection{
+  display: flex;
+  flex-direction: row;
+  
+  padding-left: 20px;
+  background-color: #000;
+  
+  
+  
+  
+}
+.contenedorContacto{
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  img{
+    border-radius: 30px;
+  }
+  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 25px;
+    
   }
   
+}
+@media (max-width: 768px){
+  .contenedorContacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40%;
+    margin-left: 70px;
+   
+    
+  }
+}
+  /*estilos recetas*/
   
+.recetario1{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
   
+}
   
+  .h1R{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20%;
+    margin-bottom: 50px;
+    text-decoration: underline;
+   }
+
+   @media (max-width: 768px){
+    .recetario1{
+      display: grid;
+      grid-template-columns: auto;
+      padding-bottom: 20px;
+      
+    }
+    .h1R{
+      padding-top: 80px;
+    }
+   }
+ 
   
   

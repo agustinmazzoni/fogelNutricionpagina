@@ -4,6 +4,8 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
   background-image: url("/imagen/fondo-borde-floral-primavera-verde-ilustracion-acuarela-hoja_53876-126807.webp");
   box-sizing: border-box;
@@ -12,11 +14,14 @@ body {
 header {
   width: 100%;
   background: rgba(41, 68, 43, 0.557);
-  height: 150px;
+  height: 172px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+}
+header h1 {
+  margin-top: 20px;
 }
 header label {
   display: none;
@@ -32,6 +37,12 @@ header label li:hover {
 #btn-menu {
   display: none;
   margin: 0;
+}
+
+.menuHamburguesa:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+  width: 600px;
 }
 
 .menu {
@@ -53,10 +64,21 @@ header label li:hover {
   border-radius: 10px;
 }
 .menu ul li:hover a {
-  display: block;
+  display: flex;
   padding: 15px 20px;
   color: #fff;
   text-decoration: none;
+}
+
+.botones {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
 }
 
 .logo1 {
@@ -64,13 +86,13 @@ header label li:hover {
   justify-content: left;
   margin-top: 50px;
   margin-left: 20px;
+  font-size: 50px;
 }
 
 @media (max-width: 768px) {
   header label {
     display: flex;
     justify-content: center;
-    margin-top: 90px;
     width: 60px;
     height: 60px;
   }
@@ -120,6 +142,9 @@ header label li:hover {
     display: flex;
     justify-content: center;
     font-size: 45px;
+  }
+  .contenedorCarousel {
+    margin: 10px;
   }
 }
 /* finde de menu */
@@ -185,25 +210,16 @@ header label li:hover {
   border-radius: 10px;
 }
 
-.contendorTitulos {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-content: space-between;
-  width: 1500px;
-  margin-left: 8%;
-  font-size: larger;
+@media (max-width: 768px) {
+  .grillaImagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-.contendorTitulos .titulosGrilla {
-  color: black;
-}
-
 /*finaliza cartas*/
-.galeria {
-  padding: 32px;
-}
-
-.carousel-inner {
-  padding: 20px;
+.contenedorCarousel {
+  margin: 20px;
 }
 
 /*Comienza formulario*/
@@ -215,10 +231,10 @@ header label li:hover {
   font-size: 40px;
   align-items: center;
 }
-.texto-turnos .caja1 {
+
+.caja1 {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .formulario {
@@ -226,28 +242,65 @@ header label li:hover {
   justify-content: center;
   flex-direction: column;
   width: 700px;
-  margin-left: 30%;
+  height: 400px;
   margin-top: 10%;
 }
 .formulario .formulario__texto {
   font-size: 20px;
+  background: rgba(41, 68, 43, 0.258);
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
-.input__submit {
-  width: 200px;
+.formulario__input {
+  border-radius: 10px;
+  height: 30px;
+  margin-bottom: 10px;
 }
 
+.formulario__input1 {
+  border-radius: 10px;
+}
+
+.btn1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  font-size: larger;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 255, 0.494);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .texto-turnos {
+    padding-top: 40%;
+  }
+}
 /*finaliza formulario*/
 /*comienzo footer*/
 footer {
-  background-color: rgba(128, 128, 128, 0.613);
+  display: flex;
+  justify-content: center;
+  background-color: rgba(41, 68, 43, 0.557);
   text-decoration: none;
   width: 100%;
   margin-top: 20%;
 }
 footer .h2C {
   font-size: 30px;
-  padding-left: 50px;
+  padding: 30px 20px 30px 170px;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .contactos-texto {
@@ -255,6 +308,23 @@ footer .h2C {
   padding-left: 20px;
 }
 
+.redes {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding: 10px 0px 10px 100px;
+  color: #fff;
+}
+.redes h2 {
+  padding: 5px 0px 3px 10px;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .redes {
+    padding-right: 200px;
+  }
+}
 /*finaliza footer*/
 @media (max-width: 768px) {
   .imagenGrilla {
@@ -267,7 +337,7 @@ footer .h2C {
     margin: 0;
     padding: 0;
   }
-  .logo {
+  .logo1 {
     color: #fff;
     margin-top: 10%;
   }
@@ -275,40 +345,211 @@ footer .h2C {
     color: rgba(0, 0, 0, 0.509);
     padding-left: 30%;
   }
+  .formulario {
+    width: 550px;
+  }
 }
 /*estilos sobre mi*/
 .titulo__sobremi .h1 {
   display: flex;
   justify-content: center;
   font-size: 50px;
-  margin-top: 10%;
+  margin-top: 15%;
   color: black;
   text-decoration: none;
 }
 
-.cartas {
+.contenedorCard {
   display: flex;
-  flex-wrap: wrap;
-  background-color: rgba(41, 68, 43, 0.557);
+  justify-content: space-between;
+  background-color: rgba(250, 235, 215, 0.487);
+  margin-top: 50px;
+}
+
+.card {
+  position: relative;
+  width: 570px;
+  height: 650px;
+  margin: 20px;
+}
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px black;
+}
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  line-height: 100px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgb(3, 35, 54);
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  margin-bottom: 70%;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+  transition: all 2s;
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+  transition: all 2s;
+}
+
+@media (max-width: 768px) {
+  .contenedorCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    margin-right: 80%;
+  }
+}
+/*estilos turnos*/
+.texto-turnos2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 15%;
+  font-size: 40px;
+  align-items: center;
+}
+
+.formulario2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10%;
+}
+.formulario2 label {
+  width: 800px;
+  padding: 7px;
+}
+
+.botonEnvio {
+  padding-left: 7px;
+}
+
+/*estilos contactos*/
+.contenedorTodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
-.cartas {
-  display: flex;
-  justify-content: space-around;
-  background-color: beige;
-}
-.cartas div {
-  width: 600px;
-  height: 600px;
-  margin: 10px;
-  border-radius: 10px;
-  margin-left: 20px;
-}
-.cartas div .imagen1 {
+.imagenContactos {
+  background-color: red;
   display: flex;
   justify-content: center;
-  width: 570px;
-  margin: 10px;
-  border-radius: 10px;
+  align-items: center;
+  padding-top: 20%;
+  padding-bottom: 2px;
+}
+.imagenContactos img {
+  border-radius: 60px;
+}
+
+.tituloSection {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  background-color: #000;
+}
+
+.contenedorContacto {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+.contenedorContacto img {
+  border-radius: 30px;
+}
+.contenedorContacto p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  padding-left: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .contenedorContacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40%;
+    margin-left: 70px;
+  }
+}
+/*estilos recetas*/
+.recetario1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+}
+
+.h1R {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20%;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .recetario1 {
+    display: grid;
+    grid-template-columns: auto;
+    padding-bottom: 20px;
+  }
+  .h1R {
+    padding-top: 80px;
+  }
 }/*# sourceMappingURL=style.css.map */

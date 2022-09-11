@@ -5,92 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>turnos/fogel nutricion</title>
+    <meta name="description" content="alimentacion basa en plantas, y cambios de habitos,estilo de vida saludable  ">
+    <meta name="keywords" content="html/asp/js/meta/nutricion/alimentacion/plan veggie/vegetarianos/estilo de vida/comida/alimentos/salud/buen comer/"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ 
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/style.scss">
 </head>
 <body>
 
   <header> 
+    <a class="logo" href="/index.html"> <h1 class="logo1">Fogel Nutricion</h1></a>
+    
 
     <input type="checkbox" id="btn-menu">
-    <label  for="btn-menu">
-      <img class="menuHamburguesa"  src="/imagen/menu_icon.png" width="50px" alt="">
-    </label>
+    <label  for="btn-menu"><img class="menuHamburguesa" src="/imagen/menu_icon.png" width="50px" height="30" alt=""></label>
     
     
      
     
     <nav class="menu">
       
-      <h1 class="logo">Fogel Nutricion</h1>
+      
       
       
      
        <ul class="nav__list">
         
-         <li><a  href="/index.html">Inicio</a></li>
-         <li><a  href="sobremi.html">Sobre mi</a></li>
-         <li><a  href="turnos.html">Turnos</a></li>
-         <li><a  href="contacto.html">Contactos</a></li>
-         <li><a  href="recetas.html">Recetas</a></li>
+         <li><a class="botones"  href="/index.html">Inicio</a></li>
+         <li><a class="botones" href="sobremi.html">Sobre mi</a></li>
+         <li><a class="botones" href="recetas.html">Recetas</a></li>
+         <li><a class="botones" href="turnos.html">Turnos</a></li>
+         <li><a class="botones" href="contacto.html">Contactos</a></li>
        </ul>
      
     </nav>
   </header> 
     
-        
 
     
         
 
-        <section>
+  <section>
     
-            <form>
-              
-               <h2 class="texto-turnos">turnos/consultas</h2>
+    <form>
+     
+      <h2 class="texto-turnos">Turnos/Consultas</h2>
+  
+        <div class="caja1"> 
+          
+          <p class="formulario">
+  
+           <label class="formulario__texto">Nombre Apellido </label> 
+            <input class="formulario__input" type="text" size="70"  name="nombre apellido">
+     
+           <label class="formulario__texto">Email</label> 
+            <input class="formulario__input" type="text" name="Email">
+  
+           <label class="formulario__texto">Tel (opcional)</label>
+             <input class="formulario__input" type="text" name="Tel">
+    
+           <label class="formulario__texto">Consultas</label> 
+            <textarea class="formulario__input1" name="Consultas" id="" cols="30" rows="10"></textarea>
+  
+           <input class="btn1 " type="submit" value="ENVIAR" >
            
-                <div class="caja1"> 
-                   
-                   <p class="formulario">
            
-                    <label>Nombre Apellido </label> <input type="text" size="70" name="nombre apellido">
-              
-                    <label>Email</label> <input type="text" name="Email">
-           
-                    <label>Tel(opcional)</label> <input type="text" name="Tel">
-             
-                    <label>Consultas</label> <textarea name="Consultas" id="" cols="30" rows="10"></textarea>
-           
-                    <input type="submit" name="enviar" style="color: blue">
-           
-                   </p>
-               </div>
-              
-           
-           
-            </form>
-           </section>
+          </p>
+        </div>
+     
+        
+  
+    </form>
+  </section>
   
          
   
        
         
+  <footer class="informacion">
+    <section class="cotenedorRedes" >
+      <h2 class="h2C">Contacto</h2>
+      <div class="redes" >
+        <img src="/imagen/Instagram_icon copia.png" width="40px" alt="">
+        <h2>fogelnutricion</h2>
+      </div>
+  
+      <div class="redes" >
+        <img src="/imagen/Mail_(iOS).svg" width="40px" alt="">
+        <h2>fogelnutricion@gmail.com</h2>
+      </div>
+  
+      <div class="redes" >
+        <img src="/imagen/Icono-Whatsapp copia.png" width="40px" alt="">
+        <h2> 2284 50-5020</h2>
+      </div>
       
+      
+    </section>
+  </footer>
 
-           <footer class="informacion">
-            <section>
-              <h2 class="h2C">Contacto</h2>
-              <ul>
-                <div class="contactos-texto">
-                   <li>Email. fogelnutricion@gmail.com</li>
-                
-                   <li>Tel. 2284 50-5020</li>
-                
-                   <li>inta-fogelnutricion</li>
-                </div>
-              </ul>
-            </section>
-          </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
     
 </body>
 </html>
